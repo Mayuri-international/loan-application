@@ -6,6 +6,11 @@
 }
 
 
+body {
+  font-family: 'Poppins', sans-serif;
+
+}
+
 .whatsapp-button {
     background-color: #DB6217;
     color: white;
@@ -34,6 +39,8 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .nav-items{
@@ -55,9 +62,9 @@
 
 /* Logo default style */
 .logo-image {
-    width: 32px;
-    height: 32px;
-    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    margin-left: 2rem;
 }
 
 /* Medium mobile fix */
@@ -79,6 +86,34 @@
     width: 100%;
  }
 
+  .category-list-item{
+
+      width: fit-content;
+
+  }
+
+  .category-list-item{
+
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    /* padding: 0.5rem; */
+    padding: 10px;
+    border-radius: 20px;
+    
+  }
+
+  .category-list-item :hover{
+
+    background-color: #DB6217;
+    color: white;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+  }
+
+
+
 
  .hero-section-div{
 
@@ -89,6 +124,10 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
+    max-height: 700px;
+    padding-top: 8rem;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
 
  }
 
@@ -115,6 +154,63 @@
     text-transform: uppercase;    
 
 }
+
+
+
+
+.dropdown-menu {
+  left: 0 !important;
+  right: 0 !important;
+  top: 100% !important;
+}
+
+.navbar-nav .nav-link {
+  padding: 0.75rem 1rem;
+}
+
+.dropdown-menu .dropdown-item {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.95rem;
+}
+
+
+/* Mega menu base styles */
+.mega-menu {
+  display: block !important;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(40px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  pointer-events: none;
+  z-index: 999;
+}
+
+/* Show on hover */
+.nav-item.dropdown:hover .mega-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Full width and layout tweaks */
+.dropdown-menu .row {
+  width: 100%;
+  margin: 0;
+}
+
+.dropdown-menu .dropdown-item {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.95rem;
+}
+
+.navbar-nav .nav-link {
+  padding: 0.75rem 1rem;
+}
+
+
+
+
 
 @media screen and (max-width: 700px) {
     .hero-section-heading {
@@ -160,17 +256,25 @@
 }
 
 
+.hero-section-image-div{
+
+  padding-top: 2rem;
+  width: 100%;
+  height: 100%;
+  max-width: 737.19px;
+  max-height: 600px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  overflow: visible;
+}
+
 .hero-section-image {
     position: relative;
-    margin-top: 2rem;
     width: 100%;
     height: 100%;
-    max-width: 737.19px;
-    max-height: 600px;
     border-top-right-radius: 60px;
     border-bottom-left-radius: 60px;
     object-fit: cover; /* Optional: helps keep image ratio within bounds */
-    display: block;
 }
 
 
@@ -313,12 +417,15 @@
 
 .loan-services-main-container{
 
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100%;
+    height: 100%;
     gap: 1rem;
+    padding-top: 10rem;
 
 }
 
@@ -364,14 +471,16 @@
 
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     background-color: #DB6217;
     border-right: 1px solid #E4E4E4;
     width: 100%;
-    gap: 1.5rem;
-    
+    gap: 3rem;
+    padding-left: 2rem;
+    /* padding-right: 0.5rem; */
 }
+
 
 .why-choose-us-text-div p{
 
@@ -414,6 +523,7 @@
 
 .why-choose-us-main-container{
 
+  position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -444,6 +554,8 @@
 
 }
 
+
+
 .why-choose-us-container h1{
 
     color: white;
@@ -459,10 +571,14 @@
     position: relative;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    grid-template-columns: repeat(3, 1fr);
     margin: 0 auto;
 
 }
+
+
+
+
 
 @media screen and (max-width: 1080px) {
 
@@ -470,16 +586,18 @@
     .why-choose-us-box-container {
      
       border: none;
-      padding: 0 1rem; /* Optional: add some padding for mobile */
-      gap: 3rem; /* Optional: add some gap between items */
+      padding: 0 1rem;
+      gap: 3rem; 
       display: flex;
       flex-direction: column;
+      justify-content: start;
+      align-items: start;
+
+      
     }
 
     .why-choose-us-box {
       border-right: none; /* Remove right border for mobile */
-      gap: 2rem; /* Optional: add some gap between items */
-
     }
 
     .why-choose-us-image-div{
@@ -726,6 +844,17 @@
     width: 140px;
     flex-shrink: 0;
     padding: 0.5rem;
+  }
+
+  .company-image-box img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* display: block; */
+    mix-blend-mode: multiply;
+    transition: transform 0.3s ease;
+    scale: 1.4;
   }
   
 

@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="index.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 
 </head>
@@ -30,50 +31,120 @@
             <div class="container-fluid main-navbar-container">
                 <!-- Left: Logo -->
                 <div class="d-flex align-items-center logo-image">
-                    <img src="images/mainLogo.png" alt="" style="width: 32px; height: 32px; margin-right: 10px;">
+                    <img src="images/svg-icons/company-logo.svg" alt="" style="width: 40px; height: 40px;">
                 </div>
 
                 <!-- Center: Navbar toggler + nav links -->
-                <div class="d-flex align-items-center flex-grow-1 justify-content-center">
-                    <button class="navbar-toggler main-navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                <div class="collapse navbar-collapse main-navbarc nav-items" id="navbarNavDropdown">
+                    <ul class="navbar-nav nav-text-color">
+                        <!-- Mega Menu Dropdown -->
+                        <li class="nav-item dropdown position-static">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                aria-expanded="false">
 
-                    <div class="collapse navbar-collapse main-navbarc nav-items" id="navbarNavDropdown">
-                        <ul class="navbar-nav nav-text-color">
-                            <!-- Your nav items -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Loan Services
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href="#">Partner Bank</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">FAQs</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                        </ul>
-                    </div>
+                                Loan Services
+                            </a>
+                            <div class="dropdown-menu mega-menu w-100 mt-0 py-4 px-3"
+                                aria-labelledby="navbarDropdownMenuLink" style="border-top: 3px solid #FE6100;">
+                                <div class="container-fluid">
+                                    <div class="row text-start">
+                                        <!-- Housing Loan -->
+                                        <div class="col-md-3">
+                                            <h6 class="fw-bold">Housing Loan</h6>
+                                            <ul class="list-unstyled category-list-item">
+                                                <li class="nav-item dropdown position-static"><a class="dropdown-item"
+                                                        href="#">Composit Loan</a></li>
+                                                <li><a class="dropdown-item" href="#">Mortgage</a></li>
+                                                <li><a class="dropdown-item" href="#">Balance Transfer</a></li>
+                                                <li><a class="dropdown-item" href="#">Home Loan Top Up</a></li>
+                                                <li><a class="dropdown-item" href="#">Loan Against Property</a></li>
+                                                <li><a class="dropdown-item" href="#">Home Improvement Loan</a></li>
+                                                <li><a class="dropdown-item" href="#">Plot Loan</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- Property Loan -->
+                                        <div class="col-md-2">
+                                            <h6 class="fw-bold">Property Loan</h6>
+                                            <ul class="list-unstyled category-list-item">
+                                                <li class=""><a class="dropdown-item" href="#">For Business</a></li>
+                                                <li><a class="dropdown-item" href="#">For Personal Loan</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- Business Loan -->
+                                        <div class="col-md-2">
+                                            <h6 class="fw-bold">Business Loan</h6>
+                                            <ul class="list-unstyled category-list-item">
+                                                <li><a class="dropdown-item" href="#">Term Loan</a></li>
+                                                <li><a class="dropdown-item" href="#">Over Draft</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- Personal Loan -->
+                                        <div class="col-md-2">
+                                            <h6 class="fw-bold">Personal Loan</h6>
+                                            <ul class="list-unstyled category-list-item">
+                                                <li><a class="dropdown-item" href="#">Loan for Wedding</a></li>
+                                                <li><a class="dropdown-item" href="#">Higher Education</a></li>
+                                                <li><a class="dropdown-item" href="#">Home Renovation</a></li>
+                                                <li><a class="dropdown-item" href="#">Medical Expenses</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- Professional Loan -->
+                                        <div class="col-md-3">
+                                            <h6 class="fw-bold">Professional Loan</h6>
+                                            <ul class="list-unstyled category-list-item">
+                                                <li><a class="dropdown-item" href="#">Doctors</a></li>
+                                                <li><a class="dropdown-item" href="#">CA</a></li>
+                                                <li><a class="dropdown-item" href="#">CS (Company Secretary)</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- Equipment Loan -->
+                                        <div class="col-md-3 mt-4">
+                                            <h6 class="fw-bold">Equipment Loan</h6>
+                                            <ul class="list-unstyled category-list-item">
+                                                <li><a class="dropdown-item" href="#">For Hospitals</a></li>
+                                                <li><a class="dropdown-item" href="#">For Machinery</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- Project Financing -->
+                                        <div class="col-md-3 mt-4">
+                                            <h6 class="fw-bold">Project Financing</h6>
+                                            <ul class="list-unstyled category-list-item">
+                                                <li><a class="dropdown-item" href="#">Layouts</a></li>
+                                                <li><a class="dropdown-item" href="#">Construction Project</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Other Nav Items -->
+                        <li class="nav-item"><a class="nav-link" href="#">Partner Bank</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">FAQs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    </ul>
                 </div>
+
+
 
                 <!-- Right: WhatsApp button -->
                 <div class="d-none d-lg-block">
                     <button type="button" class="btn btn-primary btn-lg whatsapp-button">
-                        <img src="images/icons/whatsappLogo.png" alt=""
+                        <img src="images/svg-icons/whatsapp.svg" alt=""
                             style="width: 34px; height: 34px; margin-right: 8px;">
                         Whatsapp
                     </button>
                 </div>
+
+                
             </div>
-
-
 
         </nav>
 
@@ -96,13 +167,24 @@
 
             <!-- apply now button  -->
 
+            <!-- <div>
+
+                <h1 class="flex flex-col gap-100px"></h1>
+
+            </div> -->
+
             <div class="d-none d-lg-block">
                 <button type="button" class="btn btn-primary btn-lg whatsapp-button apply-now-button">
                     Apply Now
                 </button>
             </div>
 
-            <img src="images/hero-page-image.jpg" alt="" class="hero-section-image">
+            <div class="hero-section-image-div">
+
+                <img src="images/hero-page-image.jpg" alt="" class="hero-section-image">
+
+            </div>
+
 
         </div>
 
@@ -122,7 +204,8 @@
                     <div class="scroll-item">
 
                         <div class="loan-box">
-                            <img src="images/icons/house_loan.png" width="40" alt="">
+                            <img src="images/svg-icons/home-loan.svg" width="40" alt="">
+
                             <div>HOUSING<br>LOANS</div>
                         </div>
 
@@ -131,7 +214,7 @@
                     <div class="scroll-item">
 
                         <div class="loan-box">
-                            <img src="images/icons/property_loan.png" width="40" alt="">
+                            <img src="images/svg-icons/property-loan.svg" width="40" alt="">
                             <div>PROPERTY<br>LOANS</div>
                         </div>
 
@@ -140,7 +223,7 @@
                     <div class="scroll-item">
 
                         <div class="loan-box">
-                            <img src="images/icons/bussiness_loan.png" width="40" alt="">
+                            <img src="images/svg-icons/bussiness-loan.svg" width="40" alt="">
                             <div>BUSSINESS<br>LOANS</div>
                         </div>
 
@@ -149,16 +232,7 @@
                     <div class="scroll-item">
 
                         <div class="loan-box">
-                            <img src="images/icons/bussiness_loan.png" width="40" alt="">
-                            <div>BUSSINESS<br>LOANS</div>
-                        </div>
-
-                    </div>
-
-                    <div class="scroll-item">
-
-                        <div class="loan-box">
-                            <img src="images/icons/personal_loan.png" width="40" alt="">
+                            <img src="images/svg-icons/personal.svg" width="40" alt="">
                             <div>PERSONAL<br>LOANS</div>
                         </div>
 
@@ -167,17 +241,26 @@
                     <div class="scroll-item">
 
                         <div class="loan-box">
-                            <img src="images/icons/professional_loan.png" width="40" alt="">
+                            <img src="images/svg-icons/professional-loan.svg" width="40" alt="">
                             <div>Professional<br>LOANS</div>
                         </div>
-                
+
                     </div>
 
                     <div class="scroll-item">
 
                         <div class="loan-box">
-                            <img src="images/icons/equipment_loan.png" width="40" alt="">
+                            <img src="images/svg-icons/equipment-loan.svg" width="40" alt="">
                             <div>Equipment<br>LOANS</div>
+                        </div>
+
+                    </div>
+
+                    <div class="scroll-item">
+
+                        <div class="loan-box">
+                            <img src="images/svg-icons/project-loan.svg" width="40" alt="">
+                            <div>Project<br>LOANS</div>
                         </div>
 
                     </div>
@@ -271,7 +354,7 @@
 
                         <div class="why-choose-us-image-div">
 
-                            <img src="images/icons/happy_customer.png" alt="">
+                            <img src="images/svg-icons/happy-customer.svg" alt="">
 
                         </div>
 
@@ -292,7 +375,7 @@
 
                         <div class="why-choose-us-image-div">
 
-                            <img src="images/icons/bank_partners.png" alt="">
+                            <img src="images/svg-icons/partners-bank.svg" alt="">
 
                         </div>
 
@@ -313,7 +396,7 @@
 
                         <div class="why-choose-us-image-div">
 
-                            <img src="images/icons/fast_approval.png" alt="">
+                            <img src="images/svg-icons/fast-approval.svg" alt="">
 
                         </div>
 
@@ -350,22 +433,22 @@
 
                     <div class="scroll-item company-image-box">
 
-                        <img src="images/icons/aditya_birla.png" alt="Aditya Birla">
+                        <img src="images/companies/aditya-birla.svg" alt="Aditya Birla">
 
                     </div>
-                    <div class="scroll-item company-image-box"><img src="images/icons/axis_bank.png" width="40"
+                    <div class="scroll-item company-image-box"><img src="images/companies/axis-bank.svg" width="40"
                             alt="Axis Bank"></div>
-                    <div class="scroll-item company-image-box"><img src="images/icons/bandhan_bank.png" width="40"
+                    <div class="scroll-item company-image-box"><img src="images/companies/bandhan-bank.svg" width="40"
                             alt="Bandhan Bank">
                     </div>
 
-                    <div class="scroll-item company-image-box"><img src="images/icons/induslnd_bank.png" width="40"
+                    <div class="scroll-item company-image-box"><img src="images/companies/indusland-bank.svg" width="40"
                             alt="IndusInd Bank">
                     </div>
-                    <div class="scroll-item company-image-box"><img src="images/icons/kotak_bank.png" width="40"
+                    <div class="scroll-item company-image-box"><img src="images/companies/kotak.svg" width="40"
                             alt="Kotak Bank"></div>
 
-                    <div class="scroll-item company-image-box"><img src="images/icons/tata_capital_bank.png" width="40"
+                    <div class="scroll-item company-image-box"><img src="images/companies/tata-capital.svg" width="40"
                             alt="Tata Capital Bank"></div>
 
                 </div>
