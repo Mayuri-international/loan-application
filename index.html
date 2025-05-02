@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="index.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
 
 </head>
@@ -52,14 +53,18 @@
                                         <div class="col-md-3">
                                             <h6 class="fw-bold">Housing Loan</h6>
                                             <ul class="list-unstyled category-list-item">
-                                                <li class="nav-item dropdown position-static"><a class="dropdown-item"
-                                                        href="#">Composit Loan</a></li>
-                                                <li><a class="dropdown-item" href="#">Mortgage</a></li>
-                                                <li><a class="dropdown-item" href="#">Balance Transfer</a></li>
-                                                <li><a class="dropdown-item" href="#">Home Loan Top Up</a></li>
-                                                <li><a class="dropdown-item" href="#">Loan Against Property</a></li>
-                                                <li><a class="dropdown-item" href="#">Home Improvement Loan</a></li>
-                                                <li><a class="dropdown-item" href="#">Plot Loan</a></li>
+                                                <li class="nav-item dropdown position-static" id="loanDropdown"><a
+                                                        class="dropdown-item" href="#">Composit Loan</a></li>
+                                                <li><a class="dropdown-item loanDropdown" href="#">Mortgage</a></li>
+                                                <li><a class="dropdown-item loanDropdown" href="#">Balance Transfer</a>
+                                                </li>
+                                                <li><a class="dropdown-item loanDropdown" href="#">Home Loan Top Up</a>
+                                                </li>
+                                                <li><a class="dropdown-item loanDropdown" href="#">Loan Against
+                                                        Property</a></li>
+                                                <li><a class="dropdown-item loanDropdown" href="#">Home Improvement
+                                                        Loan</a></li>
+                                                <li><a class="dropdown-item loanDropdown" href="#">Plot Loan</a></li>
                                             </ul>
                                         </div>
 
@@ -134,6 +139,64 @@
 
 
 
+                <!-- sidebar  -->
+
+                <nav class="navbar navbar-dark bg-light fixed-top sidebar">
+                    <div class="container-fluid">
+                        <!-- <a class="navbar-brand" href="#">Offcanvas dark navbar</a> -->
+
+                        <div class="sidebar-logo-div">
+
+                            <img src="images/svg-icons/company-logo.svg" class="navbar-brand" alt="">
+                            <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                        </div>
+                        <div class="offcanvas offcanvas-start text-bg-dark" style="background-color: pink;" tabindex="-1" id="offcanvasDarkNavbar"
+                            aria-labelledby="offcanvasDarkNavbarLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Link</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Dropdown
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-dark">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <form class="d-flex mt-3" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Search"
+                                        aria-label="Search">
+                                    <button class="btn btn-success" type="submit">Search</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+
+
                 <!-- Right: WhatsApp button -->
                 <div class="d-none d-lg-block">
                     <button type="button" class="btn btn-primary btn-lg whatsapp-button">
@@ -143,7 +206,7 @@
                     </button>
                 </div>
 
-                
+
             </div>
 
         </nav>
@@ -286,39 +349,39 @@
 
                 <div class="common-issue-box">
                     <div class="common-issue-box-inner">
-                        <img src="images/icons/ok_circle.png" alt="" class="ok_circle_icon">
+                        <img src="images/svg-icons/ok-circle-filled.svg" alt="" class="ok_circle_icon">
                         <p class="issue-text">Low CIBIL Score Problems</p>
                     </div>
                     <div class="arrow-icon">
-                        <img src="images/icons/arrow-right.png" alt="Arrow" />
+                        <img src="images/svg-icons/arrow-right.svg" alt="Arrow" />
                     </div>
                 </div>
 
                 <div class="common-issue-box">
                     <div class="common-issue-box-inner">
-                        <img src="images/icons/ok_circle.png" alt="" class="ok_circle_icon">
+                        <img src="images/svg-icons/ok-circle-filled.svg" alt="" class="ok_circle_icon">
                         <p class="issue-text">Documentation Support</p>
                     </div>
                     <div class="arrow-icon">
-                        <img src="images/icons/arrow-right.png" alt="Arrow" />
+                        <img src="images/svg-icons/arrow-right.svg" alt="Arrow" />
                     </div>
                 </div>
                 <div class="common-issue-box">
                     <div class="common-issue-box-inner">
-                        <img src="images/icons/ok_circle.png" alt="" class="ok_circle_icon">
+                        <img src="images/svg-icons/ok-circle-filled.svg" alt="" class="ok_circle_icon">
                         <p class="issue-text">Faster Loan Disbursement</p>
                     </div>
                     <div class="arrow-icon">
-                        <img src="images/icons/arrow-right.png" alt="Arrow" />
+                        <img src="images/svg-icons/arrow-right.svg" alt="Arrow" />
                     </div>
                 </div>
                 <div class="common-issue-box">
                     <div class="common-issue-box-inner">
-                        <img src="images/icons/ok_circle.png" alt="" class="ok_circle_icon">
+                        <img src="images/svg-icons/ok-circle-filled.svg" alt="" class="ok_circle_icon">
                         <p class="issue-text">Lower Interest Rates</p>
                     </div>
                     <div class="arrow-icon">
-                        <img src="images/icons/arrow-right.png" alt="Arrow" />
+                        <img src="images/svg-icons/arrow-right.svg" alt="Arrow" />
                     </div>
                 </div>
 
@@ -328,7 +391,7 @@
             <div class="d-none d-lg-block">
                 <button type="button" class="btn btn-primary btn-lg check-all-button">
                     Check All
-                    <img src="images/icons/white-right-arrow.png" alt="" class="white-arrow-icon">
+                    <img src="images/svg-icons/arrow-right-white.svg" alt="" class="white-arrow-icon">
                 </button>
             </div>
 
@@ -417,6 +480,15 @@
 
         </div>
 
+
+        <!-- Customer Testimonials Section -->
+
+        <div>
+
+            <h1 class="customer-testimonials-header">Customer Testimonials</h1>
+
+
+        </div>
 
         <!-- Partners Bank  -->
 
